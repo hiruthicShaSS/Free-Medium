@@ -8,7 +8,7 @@ class AppState extends ChangeNotifier {
   AppState({required this.link});
 
   void updateLink(String newLink) {
-    link = newLink;
+    link = newLink.trimLeft().trimRight();
     _newLinkAvailable = true;
 
     notifyListeners();

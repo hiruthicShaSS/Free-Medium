@@ -9,19 +9,20 @@ environment:
   sdk: ">=2.17.3 <3.0.0"
 
 dependencies:
+  awesome_notifications: ^0.6.21
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  html: ^0.15.0
   notifications: ^2.0.1
+  path_provider: ^2.0.11
   provider: ^6.0.3
   receive_sharing_intent: ^1.4.5
   uni_links: ^0.5.1
   webview_flutter: ^3.0.4
-  html: ^0.15.0
-  awesome_notifications: ^0.6.21
+  app_settings: ^4.1.8
 
 dev_dependencies:
-
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter

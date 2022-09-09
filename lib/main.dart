@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/foundation.dart';
@@ -8,11 +9,12 @@ import 'package:flutter/services.dart';
 import 'package:free_medium/appstate.dart';
 import 'package:free_medium/webview_screen.dart';
 import 'package:notifications/notifications.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 import 'package:uni_links/uni_links.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   AwesomeNotifications().initialize(
@@ -38,6 +40,15 @@ void main() {
     ],
     debug: kDebugMode,
   );
+
+  final appDir = (await getTemporaryDirectory()).path;
+  await Directory(appDir).delete(recursive: true);
+
+  var appDocDir = await getApplicationDocumentsDirectory();
+
+  if (appDocDir.existsSync()) {
+    appDocDir.deleteSync(recursive: true);
+  }
 
   runApp(const MyApp());
 }

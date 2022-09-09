@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:app_settings/app_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:free_medium/appstate.dart';
 import 'package:provider/provider.dart';
@@ -18,21 +19,23 @@ class WebviewScreen extends StatefulWidget {
 class _WebviewScreenState extends State<WebviewScreen> {
   String title = "Loading page...";
   int progress = 0;
-  late WebViewController _webViewController;
+  WebViewController? _webViewController;
 
   @override
   Widget build(BuildContext context) {
     return Consumer<AppState>(builder: (context, appState, child) {
       if (appState.isNewLinkAvailable) {
-        _webViewController.loadUrl(appState.link);
-        appState.setNewLinkAvailablitiy = false;
+        if (_webViewController != null) {
+          _webViewController?.loadUrl(appState.link);
+          appState.setNewLinkAvailablitiy = false;
+        }
       }
 
       return Scaffold(
         appBar: AppBar(title: Text(title)),
         body: WillPopScope(
           onWillPop: () async {
-            _webViewController.goBack();
+            _webViewController!.goBack();
             return Future.value(false);
           },
           child: Column(
@@ -46,15 +49,22 @@ class _WebviewScreenState extends State<WebviewScreen> {
                 child: WebView(
                   initialUrl: widget.link,
                   javascriptMode: JavascriptMode.unrestricted,
-                  onWebViewCreated: (controller) {
+                  allowsInlineMediaPlayback: true,
+                  zoomEnabled: true,
+                  onWebViewCreated: (controller) async {
                     _webViewController = controller;
+
+                    if (appState.isNewLinkAvailable) {
+                      _webViewController?.loadUrl(appState.link);
+                      appState.setNewLinkAvailablitiy = false;
+                    }
                   },
                   onProgress: (value) {
                     setState(() => progress = value);
                   },
                   onPageFinished: (value) async {
-                    final html =
-                        await _webViewController.runJavascriptReturningResult(
+                    final html = await _webViewController!
+                        .runJavascriptReturningResult(
                             "new XMLSerializer().serializeToString(document)");
 
                     dom.Document doc = dom.Document.html(jsonDecode(html));
