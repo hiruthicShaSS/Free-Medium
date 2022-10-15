@@ -1,6 +1,6 @@
 import 'dart:convert';
+import 'dart:developer';
 
-import 'package:app_settings/app_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:free_medium/appstate.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +18,7 @@ class WebviewScreen extends StatefulWidget {
 
 class _WebviewScreenState extends State<WebviewScreen> {
   String title = "Loading page...";
-  int progress = 0;
+  int? progress;
   WebViewController? _webViewController;
 
   @override
@@ -32,17 +32,30 @@ class _WebviewScreenState extends State<WebviewScreen> {
       }
 
       return Scaffold(
-        appBar: AppBar(title: Text(title)),
+        appBar: AppBar(
+          title: Text(title),
+          actions: [
+            IconButton(
+              onPressed: () async => _webViewController!.reload(),
+              icon: const Icon(Icons.refresh),
+            ),
+          ],
+        ),
         body: WillPopScope(
           onWillPop: () async {
-            _webViewController!.goBack();
+            await _webViewController!.goBack();
+            await _webViewController!.runJavascriptReturningResult(
+                "localStorage.clear();sessionStorage.clear();");
+            await _webViewController!.runJavascriptReturningResult(
+                r'document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });');
+            await _webViewController!.clearCacheWithoutReload();
             return Future.value(false);
           },
           child: Column(
             children: [
-              if (progress != 100)
+              if (progress != null)
                 LinearProgressIndicator(
-                  value: progress.toDouble(),
+                  value: progress == 0 ? null : progress!.toDouble(),
                   backgroundColor: Colors.black,
                 ),
               Expanded(
@@ -51,6 +64,7 @@ class _WebviewScreenState extends State<WebviewScreen> {
                   javascriptMode: JavascriptMode.unrestricted,
                   allowsInlineMediaPlayback: true,
                   zoomEnabled: true,
+                  gestureNavigationEnabled: true,
                   onWebViewCreated: (controller) async {
                     _webViewController = controller;
 
@@ -61,6 +75,7 @@ class _WebviewScreenState extends State<WebviewScreen> {
                   },
                   onProgress: (value) {
                     setState(() => progress = value);
+                    if (value == 100) progress = null;
                   },
                   onPageFinished: (value) async {
                     final html = await _webViewController!

@@ -14,7 +14,6 @@ dependencies:
   flutter:
     sdk: flutter
   html: ^0.15.0
-  notifications: ^2.0.1
   path_provider: ^2.0.11
   provider: ^6.0.3
   receive_sharing_intent: ^1.4.5

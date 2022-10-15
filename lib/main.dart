@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:free_medium/appstate.dart';
 import 'package:free_medium/webview_screen.dart';
-import 'package:notifications/notifications.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
@@ -92,23 +91,6 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     _initialDeepLinkFuture = initUniLinks();
-
-    Notifications notifications = Notifications();
-    notifications.notificationStream!.listen((event) {
-      if (event.packageName == "com.medium.reader") {
-        log("Captured a notification: $event");
-
-        AwesomeNotifications().createNotification(
-          content: NotificationContent(
-            id: 1,
-            channelKey: "basic_channel",
-            title: event.title,
-            body: "Read this on Free Medium",
-            criticalAlert: true,
-          ),
-        );
-      }
-    });
   }
 
   @override
