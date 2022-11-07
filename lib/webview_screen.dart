@@ -1,8 +1,10 @@
 import 'dart:convert';
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:free_medium/appstate.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:html/dom.dart' as dom;
@@ -49,7 +51,9 @@ class _WebviewScreenState extends State<WebviewScreen> {
             await _webViewController!.runJavascriptReturningResult(
                 r'document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });');
             await _webViewController!.clearCacheWithoutReload();
-            return Future.value(false);
+            await clearCache();
+
+            return _webViewController!.canGoBack();
           },
           child: Column(
             children: [
@@ -65,6 +69,7 @@ class _WebviewScreenState extends State<WebviewScreen> {
                   allowsInlineMediaPlayback: true,
                   zoomEnabled: true,
                   gestureNavigationEnabled: true,
+                  backgroundColor: Colors.black,
                   onWebViewCreated: (controller) async {
                     _webViewController = controller;
 
@@ -98,5 +103,13 @@ class _WebviewScreenState extends State<WebviewScreen> {
         ),
       );
     });
+  }
+
+  Future<void> clearCache() async {
+    String tempDir = (await getTemporaryDirectory()).path;
+    String appDir = (await getApplicationDocumentsDirectory()).path;
+
+    await Directory(tempDir).delete(recursive: true);
+    await Directory(appDir).delete(recursive: true);
   }
 }

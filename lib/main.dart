@@ -2,8 +2,6 @@ import 'dart:async';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:awesome_notifications/awesome_notifications.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:free_medium/appstate.dart';
@@ -15,30 +13,6 @@ import 'package:uni_links/uni_links.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  AwesomeNotifications().initialize(
-    null,
-    [
-      NotificationChannel(
-        channelGroupKey: 'basic_channel_group',
-        channelKey: 'basic_channel',
-        channelName: 'Basic notifications',
-        channelDescription: 'Notification channel for basic tests',
-        defaultColor: const Color(0xFF9D50DD),
-        ledColor: Colors.white,
-        criticalAlerts: true,
-        importance: NotificationImportance.Max,
-        playSound: true,
-      )
-    ],
-    // Channel groups are only visual and are not required
-    channelGroups: [
-      NotificationChannelGroup(
-          channelGroupkey: 'basic_channel_group',
-          channelGroupName: 'Basic group')
-    ],
-    debug: kDebugMode,
-  );
 
   final appDir = (await getTemporaryDirectory()).path;
   await Directory(appDir).delete(recursive: true);
