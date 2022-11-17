@@ -1,0 +1,2974 @@
+a {
+  color: rgb(140, 140, 250);
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+embed[type="application/pdf"] {
+  filter: invert(90%);
+}
+
+html {
+  color: rgb(191, 191, 191);
+  background: rgb(31, 31, 31) !important;
+}
+
+body {
+  background-color: rgb(31, 31, 31);
+  background-image: none !important;
+}
+
+input,
+select,
+textarea,
+button {
+  color: rgb(191, 191, 191);
+  background-color: rgb(31, 31, 31);
+}
+
+font {
+  color: rgb(191, 191, 191);
+}
+
+html {
+  filter: contrast(100%) brightness(100%) saturate(100%);
+}
+
+.NIGHTEYE_Filter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  z-index: 2147483647;
+}
+
+.NIGHTEYE_YellowFilter {
+  background: rgba(255, 255, 0, 0.15);
+  opacity: 0;
+}
+
+.NIGHTEYE_BlueFilter {
+  background: rgba(0, 0, 255, 0.15);
+  opacity: 0;
+}
+
+.NIGHTEYE_DimFilter {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.NIGHTEYE_TransformZ {
+  transform: translateZ(0px);
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/81d2bf1/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/charter-400-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/81d2bf1/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-400-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/be78681/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/charter-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/be78681/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/77a0c0c/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/charter-700-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/77a0c0c/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-700-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/f50d520/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/charter-700-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: charter;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/f50d520/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/charter-700-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: fell;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/415369b/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/fell-400-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: fell;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/415369b/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/fell-400-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: fell;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/78ce731/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/fell-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: fell;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/78ce731/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/fell-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: gt-super;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/4a44748/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/gt-super-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: gt-super;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/4a44748/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/gt-super-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: noe;
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/b6752aa/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/noe-display-500-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: noe;
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/b6752aa/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/noe-display-500-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: opendyslexic;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/1c491fd/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/opendyslexic-400-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: opendyslexic;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/1c491fd/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/opendyslexic-400-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: opendyslexic;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/0a6190b/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/opendyslexic-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: opendyslexic;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/0a6190b/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/opendyslexic-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 300;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/51a79f1/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-300-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 300;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/51a79f1/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-300-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/6fd11d6/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-300-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 300;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/6fd11d6/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-300-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/3887986/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-400-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/3887986/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-400-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/b492c44/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/b492c44/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/54b52d6/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-500-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 500;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/54b52d6/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-500-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/df9ba7f/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-500-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/df9ba7f/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-500-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/9da4d76/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-700-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/9da4d76/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-700-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/cf896f3/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/sohne-700-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: sohne;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/cf896f3/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/sohne-700-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/07894b4/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-code-pro-400-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/07894b4/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-code-pro-400-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/3bd49b7/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-code-pro-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/3bd49b7/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-code-pro-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/15b127a/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-code-pro-700-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/15b127a/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-code-pro-700-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/a9cd261/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-code-pro-700-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-code-pro;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/a9cd261/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-code-pro-700-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/76c214a/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-serif-pro-400-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/76c214a/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-serif-pro-400-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/8e059b2/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-serif-pro-400-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/8e059b2/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-serif-pro-400-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/7f2eb60/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-serif-pro-700-italic.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://glyph.medium.com/font/7f2eb60/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-serif-pro-700-italic.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/b156742/0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm/source-serif-pro-700-normal.woff") format("woff");
+  unicode-range: U+0-7F, U+A0, U+B7, U+200A, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026;
+}
+
+@font-face {
+  font-family: source-serif-pro;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://glyph.medium.com/font/b156742/3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj/source-serif-pro-700-normal.woff") format("woff");
+  unicode-range: U+80-9F, U+A1-B6, U+B8-2009, U+200B-2013, U+2015-2017, U+201A-201B, U+201E-2021, U+2023-2025, U+2027-10FFFF;
+}
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(191, 191, 191, 0.8);
+  position: relative;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dd,
+ol,
+ul,
+menu,
+figure,
+blockquote,
+p,
+pre,
+form {
+  margin: 0px;
+}
+
+menu,
+ol,
+ul {
+  padding: 0px;
+  list-style: none none;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+button {
+  background: transparent;
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0px;
+}
+
+:root {
+  --reach-tabs: 1;
+  --reach-menu-button: 1;
+  --reach-tabs-night-eye: 1;
+  --reach-menu-button-night-eye: 1;
+}
+
+#speechify-root {
+  font-family: Sohne, sans-serif;
+}
+
+div[data-popper-reference-hidden="true"] {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hljs {
+  background: rgb(28, 28, 33);
+  color: rgb(191, 191, 191);
+}
+
+.xml .hljs-meta {
+  color: rgb(191, 191, 191);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: rgb(153, 230, 153);
+}
+
+.hljs-tag,
+.hljs-attribute,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-name {
+  color: rgb(230, 153, 217);
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: rgb(172, 206, 210);
+}
+
+.hljs-code,
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: rgb(230, 154, 153);
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: rgb(153, 153, 230);
+}
+
+.hljs-title,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-number {
+  color: rgb(163, 153, 230);
+}
+
+.hljs-section,
+.hljs-meta {
+  color: rgb(224, 181, 158);
+}
+
+.hljs-title.class_,
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-built_in,
+.hljs-params {
+  color: rgb(189, 153, 230);
+}
+
+.hljs-attr {
+  color: rgb(225, 208, 157);
+}
+
+.hljs-subst {
+  color: rgb(191, 191, 191);
+}
+
+.hljs-formula {
+  background-color: rgb(43, 43, 43);
+  font-style: italic;
+}
+
+.hljs-addition {
+  background-color: rgb(28, 110, 28);
+}
+
+.hljs-deletion {
+  background-color: rgb(94, 35, 23);
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+  color: rgb(218, 193, 164);
+}
+
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+@-webkit-keyframes k1 {
+  0% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes k1 {
+  0% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.a {
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.b {
+  font-weight: 400;
+}
+
+.c {
+  background-color: rgb(28, 28, 33);
+}
+
+.l {
+  display: grid;
+}
+
+.m {
+  grid-template-rows: 1fr;
+}
+
+.x {
+  border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.y {
+  display: block;
+}
+
+.z {
+  background: rgb(102, 75, 0);
+}
+
+.ab {
+  z-index: 10;
+}
+
+.ac {
+  background-color: rgb(102, 75, 0);
+}
+
+.ae {
+  width: 100%;
+}
+
+.af {
+  border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.ag {
+  position: fixed;
+}
+
+.ah {
+  top: 0px;
+}
+
+.ai {
+  left: 0px;
+}
+
+.aj {
+  right: 0px;
+}
+
+.am {
+  display: flex;
+}
+
+.an {
+  justify-content: center;
+}
+
+.at {
+  max-width: 1192px;
+}
+
+.au {
+  min-width: 0px;
+}
+
+.av {
+  padding: 25px 0px;
+}
+
+.aw {
+  height: 75px;
+}
+
+.ax {
+  flex-direction: row;
+}
+
+.ay {
+  color: inherit;
+}
+
+.az {
+  fill: inherit;
+}
+
+.ba {
+  font-size: inherit;
+}
+
+.bb {
+  border: inherit;
+}
+
+.bc {
+  font-family: inherit;
+}
+
+.bd {
+  letter-spacing: inherit;
+}
+
+.be {
+  font-weight: inherit;
+}
+
+.bf {
+  padding: 0px;
+}
+
+.bg {
+  margin: 0px;
+}
+
+.bk:disabled {
+  cursor: default;
+}
+
+.bl:disabled {
+  color: rgb(191, 191, 191);
+}
+
+.bm:disabled {
+  fill: rgb(191, 191, 191);
+}
+
+.bn {
+  fill: rgb(191, 191, 191);
+}
+
+.bo {
+  height: 25px;
+}
+
+.bp {
+  flex: 1 0 auto;
+}
+
+.bq {
+  align-items: center;
+}
+
+.bu {
+  margin-right: 25px;
+}
+
+.bv {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bw {
+  font-size: 14px;
+}
+
+.bx {
+  line-height: 20px;
+}
+
+.by {
+  color: rgb(191, 191, 191);
+}
+
+.ca {
+  color: rgb(255, 255, 255);
+}
+
+.cb {
+  padding: 7px 16px 9px;
+}
+
+.cc {
+  fill: rgb(255, 255, 255);
+}
+
+.cd {
+  background: rgb(26, 26, 26);
+}
+
+.ce {
+  border-color: rgb(26, 26, 26);
+}
+
+.ch:disabled {
+  cursor: inherit !important;
+}
+
+.ci:disabled {
+  opacity: 0.1;
+}
+
+.cj:disabled:hover {
+  background: rgb(26, 26, 26);
+}
+
+.ck:disabled:hover {
+  border-color: rgb(26, 26, 26);
+}
+
+.cl {
+  border-radius: 99em;
+}
+
+.cm {
+  border-width: 1px;
+}
+
+.cn {
+  border-style: solid;
+}
+
+.co {
+  box-sizing: border-box;
+}
+
+.cp {
+  display: inline-block;
+}
+
+.cq {
+  text-decoration: none;
+}
+
+.cr h3 {
+  font-size: 24px;
+}
+
+.cs button {
+  font-size: 20px;
+}
+
+.ct {
+  overflow: hidden;
+}
+
+.cu {
+  position: relative;
+}
+
+.cv {
+  padding-bottom: 92px;
+}
+
+.cw {
+  padding-top: 93px;
+}
+
+.cx {
+  height: 100%;
+}
+
+.cy {
+  flex-direction: column;
+}
+
+.cz {
+  z-index: 2;
+}
+
+.df {
+  margin-bottom: 35px;
+}
+
+.dg {
+  font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.dw {
+  font-feature-settings: "pnum", "lnum";
+}
+
+.dx {
+  color: rgb(191, 191, 191);
+}
+
+.dy {
+  margin-bottom: 50px;
+}
+
+.dz {
+  width: 80%;
+}
+
+.ea {
+  font-size: 18px;
+}
+
+.eb {
+  line-height: 24px;
+}
+
+.ec {
+  font-size: 16px;
+}
+
+.ed {
+  padding: 7px 20px 9px;
+}
+
+.ee {
+  width: 213px;
+}
+
+.ef {
+  border-top: 1px solid rgb(51, 51, 51);
+}
+
+.eg {
+  animation: 1.2s ease-in-out 0s infinite normal none running k1;
+}
+
+.eh {
+  padding: 32px;
+}
+
+.ei {
+  margin-bottom: 32px;
+}
+
+.ej {
+  border-radius: 10px;
+}
+
+.ek {
+  margin-right: 20px;
+}
+
+.el {
+  height: 22px;
+}
+
+.em {
+  width: 22px;
+}
+
+.en {
+  background-color: rgb(38, 38, 38);
+}
+
+.eo {
+  height: 10px;
+}
+
+.ep {
+  width: 165px;
+}
+
+.eq {
+  align-items: flex-start;
+}
+
+.er {
+  flex-wrap: wrap;
+}
+
+.fh {
+  font-weight: 500;
+}
+
+.fi {
+  font-size: 30px;
+}
+
+.fj {
+  line-height: 36px;
+}
+
+.fk {
+  letter-spacing: 0px;
+}
+
+.fl {
+  color: rgb(230, 230, 230);
+}
+
+.gg {
+  flex-grow: 0;
+}
+
+.gh {
+  margin-bottom: 24px;
+}
+
+.gi {
+  margin-right: 16px;
+}
+
+.gj {
+  top: -10px;
+}
+
+.gk {
+  min-width: 300px;
+}
+
+.gl {
+  margin-bottom: 20px;
+}
+
+.gm {
+  border-radius: 4px;
+}
+
+.gn {
+  margin-right: 8px;
+}
+
+.go {
+  height: 20px;
+}
+
+.gp {
+  width: 20px;
+}
+
+.gq {
+  height: 8px;
+}
+
+.gr {
+  width: 82px;
+}
+
+.gs {
+  height: 16px;
+}
+
+.gt {
+  margin-bottom: 12px;
+}
+
+.gu {
+  width: 64px;
+}
+
+.hb {
+  height: 100vh;
+}
+
+.hc {
+  width: 100vw;
+}
+
+.hd {
+  fill: rgb(191, 191, 191);
+}
+
+.he {
+  position: sticky;
+}
+
+.hf {
+  top: 107px;
+}
+
+.hg {
+  padding: 24px 0px;
+}
+
+.hh {
+  margin-bottom: 8px;
+}
+
+.hi {
+  margin-right: 26px;
+}
+
+.hj {
+  color: rgb(191, 191, 191);
+}
+
+.hk {
+  padding: 30px 0px;
+}
+
+.hl {
+  margin-bottom: 0px;
+}
+
+.hm {
+  min-width: 100vw;
+}
+
+.hn {
+  position: static;
+}
+
+.ho {
+  bottom: 0px;
+}
+
+.hp {
+  background-color: rgb(0, 0, 0);
+}
+
+.ht:disabled {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hu:disabled {
+  fill: rgba(255, 255, 255, 0.45);
+}
+
+.hv {
+  margin-top: 20px;
+}
+
+.hw {
+  font-size: 13px;
+}
+
+.hx {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hz {
+  border: 0px;
+}
+
+.ia {
+  height: 1px;
+}
+
+.ib {
+  background-color: rgba(28, 28, 33, 0.4);
+}
+
+.ic {
+  margin: 28px 0px 20px;
+}
+
+.id {
+  border-top: none;
+}
+
+.ie {
+  padding-bottom: 16px;
+}
+
+.if {
+  padding-top: 40px;
+}
+
+.ig {
+  margin-bottom: 16px;
+}
+
+.ih {
+  margin-right: 10px;
+}
+
+.ii {
+  font-weight: 700;
+}
+
+.ij {
+  font-size: 12px;
+}
+
+.ik {
+  line-height: 16px;
+}
+
+.il {
+  letter-spacing: 0.083em;
+}
+
+.im {
+  text-transform: uppercase;
+}
+
+.in {
+  width: 40px;
+}
+
+.io {
+  flex: 0 0 auto;
+}
+
+.ip {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+}
+
+.iq {
+  border-radius: 50%;
+}
+
+.ir {
+  position: absolute;
+}
+
+.is {
+  margin-left: 8px;
+}
+
+.it {
+  max-height: 16px;
+}
+
+.iu {
+  text-overflow: ellipsis;
+}
+
+.iv {
+  display: -webkit-box;
+}
+
+.iw {
+  -webkit-line-clamp: 1;
+}
+
+.ix {
+  -webkit-box-orient: vertical;
+}
+
+.iy {
+  word-break: break-all;
+}
+
+.ja {
+  padding-right: 2px;
+}
+
+.jb {
+  max-height: 40px;
+}
+
+.jc {
+  -webkit-line-clamp: 2;
+}
+
+.jd {
+  padding-left: 6px;
+}
+
+.je {
+  padding-right: 6px;
+}
+
+.jf {
+  color: rgb(191, 191, 191);
+}
+
+.jg {
+  padding-bottom: 24px;
+}
+
+.jh {
+  padding-top: 24px;
+}
+
+.jl {
+  padding: 6px 16px;
+}
+
+.jm {
+  border: 1px solid rgb(51, 51, 51);
+}
+
+.jn {
+  border-radius: 3px;
+}
+
+.jo {
+  padding-bottom: 12px;
+}
+
+.jp {
+  padding-top: 12px;
+}
+
+.jq {
+  opacity: 1;
+}
+
+.jr {}
+
+.jx {
+  white-space: nowrap;
+}
+
+.jy {
+  justify-content: space-between;
+}
+
+.jz {
+  flex: 1 1 auto;
+}
+
+.ke {
+  padding-bottom: 8px;
+}
+
+.kz {
+  padding-top: 4px;
+}
+
+.lf {
+  align-items: baseline;
+}
+
+.lg {
+  top: -1px;
+}
+
+.lh {
+  border: none;
+}
+
+.li {
+  cursor: pointer;
+}
+
+.lj {
+  padding: 0px 0px 0px 4px;
+}
+
+.lk {
+  box-sizing: content-box;
+}
+
+.lm {
+  height: 130px;
+}
+
+.ln {
+  width: 290px;
+}
+
+.lq {
+  border-bottom: 1px solid rgb(51, 51, 51);
+}
+
+.lt {
+  padding: 2px 8px;
+}
+
+.lu {
+  border-radius: 100px;
+}
+
+.lv {
+  transition: background 300ms ease 0s;
+}
+
+.lx {
+  margin-bottom: 48px;
+}
+
+.ly {
+  background: 0px center;
+}
+
+.lz {
+  border-color: rgb(117, 117, 117);
+}
+
+.mc:disabled {
+  opacity: 0.3;
+}
+
+.md:disabled:hover {
+  color: rgb(191, 191, 191);
+}
+
+.me:disabled:hover {
+  fill: rgb(191, 191, 191);
+}
+
+.mf:disabled:hover {
+  border-color: rgb(117, 117, 117);
+}
+
+.mg {
+  width: 585px;
+}
+
+.mk path {
+  fill: rgb(191, 191, 191);
+}
+
+.ml {
+  left: 50%;
+}
+
+.mm {
+  transform: translateX(-50%);
+}
+
+.mx {
+  max-width: 680px;
+}
+
+.my {
+  background-color: rgb(8, 8, 8);
+}
+
+.mz {
+  box-shadow: rgba(28, 28, 33, 0.65) 0px 0px 2px;
+}
+
+.na {
+  margin-top: 16px;
+}
+
+.nb {
+  z-index: 900;
+}
+
+.ne {
+  text-decoration: underline;
+}
+
+.nj {
+  align-self: flex-start;
+}
+
+.nl {
+  fill: rgb(255, 255, 255);
+}
+
+.bh:hover {
+  cursor: pointer;
+}
+
+.bi:hover {
+  color: rgb(191, 191, 191);
+}
+
+.bj:hover {
+  fill: rgb(191, 191, 191);
+}
+
+.cf:hover {
+  background: rgb(8, 8, 8);
+}
+
+.cg:hover {
+  border-color: rgb(41, 41, 41);
+}
+
+.hr:hover {
+  color: rgb(255, 255, 255);
+}
+
+.hs:hover {
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+.hy:hover {
+  text-decoration: underline;
+}
+
+.lw:hover {
+  background-color: rgb(51, 51, 51);
+}
+
+.ma:hover {
+  color: rgb(191, 191, 191);
+}
+
+.mb:hover {
+  fill: rgb(191, 191, 191);
+}
+
+@media all and (min-width: 1080px) {
+  .d {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .q {
+    grid-template-columns: repeat(8, 1fr) repeat(4, minmax(48px, 1fr));
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .t {
+    grid-column: 1 / span 7;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .u {
+    grid-row-start: 1;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .w {
+    grid-column: 9 / span 4;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .as {
+    margin: 0px 64px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .bt {
+    display: inline-block;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .de {
+    width: 550px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .dt {
+    font-size: 106px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .du {
+    line-height: 95px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .dv {
+    letter-spacing: -0.05em;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .fe {
+    width: calc(100% + 32px);
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .ff {
+    margin-left: -16px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .fg {
+    margin-right: -16px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .gc {
+    padding-left: 16px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .gd {
+    padding-right: 16px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .ge {
+    flex-basis: 33.3333%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .gf {
+    max-width: 33.3333%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .ha {
+    padding-top: 56px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .jw {
+    margin-bottom: 48px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .kv {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .kw {
+    line-height: 28px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .kx {
+    max-height: 56px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .ky {
+    letter-spacing: 0px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .le {
+    padding-top: 8px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .ls {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .mj {
+    right: 0px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .mv {
+    width: 640px;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .mw {
+    padding: 24px;
+  }
+}
+
+@media all and (max-width: 1079.98px) {
+  .e {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1079.98px) {
+  .bs {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 1079.98px) {
+  .dd {
+    width: 550px;
+  }
+}
+
+@media all and (max-width: 1079.98px) {
+  .gz {
+    padding-top: 56px;
+  }
+}
+
+@media all and (max-width: 1079.98px) {
+  .lr {
+    display: block;
+  }
+}
+
+@media all and (max-width: 1079.98px) {
+  .mi {
+    left: 520px;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .f {
+    display: none;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .n {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .br {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .dc {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .gx {
+    border-top: 1px solid rgb(51, 51, 51);
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .gy {
+    padding-top: 40px;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .jk {
+    display: block;
+  }
+}
+
+@media all and (max-width: 903.98px) {
+  .mh {
+    left: 420px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .g {
+    display: none;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .bz {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .db {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .gw {
+    border-top: 1px solid rgb(51, 51, 51);
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .hq {
+    padding: 24px 0px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .jj {
+    display: block;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .ka {
+    padding-right: 0px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .kb {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .kc {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .kd {
+    align-items: flex-start;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .lo {
+    height: 0px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .lp {
+    width: 0px;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .nd {
+    flex-direction: row;
+  }
+}
+
+@media all and (max-width: 727.98px) {
+  .nk {
+    padding-top: 0px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .h {
+    display: none;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .ao {
+    margin: 0px 24px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .da {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .dh {
+    font-size: 70px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .di {
+    line-height: 74px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .dj {
+    letter-spacing: -0.05em;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .es {
+    width: calc(100% + 24px);
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .et {
+    margin-left: -12px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .eu {
+    margin-right: -12px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .fm {
+    padding-left: 12px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .fn {
+    padding-right: 12px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .fo {
+    flex-basis: 100%;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .fp {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .gv {
+    border-top: 1px solid rgb(51, 51, 51);
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .ji {
+    display: block;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .js {
+    margin-bottom: 32px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .kf {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .kg {
+    line-height: 20px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .kh {
+    max-height: 40px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .ki {
+    letter-spacing: 0px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .la {
+    padding-top: 4px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .ll {
+    margin-right: 4px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .mn {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .mo {
+    padding: 12px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .nc {
+    flex-direction: row;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .nf {
+    padding-left: 16px;
+  }
+}
+
+@media all and (max-width: 551.98px) {
+  .ng {
+    padding-top: 0px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .i {
+    display: none;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .o {
+    grid-template-columns: repeat(8, 1fr) repeat(4, minmax(48px, 1fr));
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .p {
+    column-gap: 32px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .r {
+    grid-column: 1 / span 8;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .s {
+    grid-row-start: 1;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .v {
+    grid-column: 9 / span 4;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .ar {
+    margin: 0px 64px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .dq {
+    font-size: 106px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .dr {
+    line-height: 95px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .ds {
+    letter-spacing: -0.05em;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .fb {
+    width: calc(100% + 32px);
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .fc {
+    margin-left: -16px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .fd {
+    margin-right: -16px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .fy {
+    padding-left: 16px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .fz {
+    padding-right: 16px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .ga {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .gb {
+    max-width: 50%;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .jv {
+    margin-bottom: 48px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .kr {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .ks {
+    line-height: 28px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .kt {
+    max-height: 56px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .ku {
+    letter-spacing: 0px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .ld {
+    padding-top: 8px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .mt {
+    width: 640px;
+  }
+}
+
+@media all and (min-width: 904px) and (max-width: 1079.98px) {
+  .mu {
+    padding: 24px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .j {
+    display: none;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .aq {
+    margin: 0px 48px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .dn {
+    font-size: 85px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .do {
+    line-height: 88px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .dp {
+    letter-spacing: -0.055em;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .ey {
+    width: calc(100% + 28px);
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .ez {
+    margin-left: -14px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .fa {
+    margin-right: -14px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .fu {
+    padding-left: 14px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .fv {
+    padding-right: 14px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .fw {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .fx {
+    max-width: 50%;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .ju {
+    margin-bottom: 48px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .kn {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .ko {
+    line-height: 28px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .kp {
+    max-height: 56px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .kq {
+    letter-spacing: 0px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .lc {
+    padding-top: 8px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .mr {
+    width: 640px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .ms {
+    padding: 24px;
+  }
+}
+
+@media all and (min-width: 728px) and (max-width: 903.98px) {
+  .ni {
+    padding-left: 16px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .k {
+    display: none;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .ap {
+    margin: 0px 24px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .dk {
+    font-size: 85px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .dl {
+    line-height: 88px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .dm {
+    letter-spacing: -0.055em;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .ev {
+    width: calc(100% + 24px);
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .ew {
+    margin-left: -12px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .ex {
+    margin-right: -12px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .fq {
+    padding-left: 12px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .fr {
+    padding-right: 12px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .fs {
+    flex-basis: 100%;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .ft {
+    max-width: 100%;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .jt {
+    margin-bottom: 48px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .kj {
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .kk {
+    line-height: 20px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .kl {
+    max-height: 40px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .km {
+    letter-spacing: 0px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .lb {
+    padding-top: 4px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .mp {
+    width: 500px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .mq {
+    padding: 24px;
+  }
+}
+
+@media all and (min-width: 552px) and (max-width: 727.98px) {
+  .nh {
+    padding-left: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ak {
+    transition: background-color 300ms linear 0s;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .al button {
+    transition: background-color 300ms linear 0s, color 300ms linear 0s;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 903.98px) {
+  .iz {
+    max-height: none;
+  }
+}
+
+.qJTHM {
+  user-select: none;
+  color: rgb(191, 191, 191);
+  direction: ltr;
+  font-family: Roboto-Regular, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  margin: 0px;
+  overflow: hidden;
+  text-size-adjust: 100%;
+}
+
+.ynRLnc {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.L6cTce {
+  display: none;
+}
+
+.bltWBb {
+  word-break: break-all;
+}
+
+.hSRGPd {
+  color: rgb(153, 186, 230);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.Bz112c-W3lGp {
+  height: 16px;
+  width: 16px;
+}
+
+.Bz112c-E3DyYd {
+  height: 20px;
+  width: 20px;
+}
+
+.Bz112c-r9oPif {
+  height: 24px;
+  width: 24px;
+}
+
+.Bz112c-uaxL4e {
+  border-radius: 10px;
+}
+
+.LgbsSe-Bz112c {
+  display: block;
+}
+
+.S9gUrf-YoZ4jf,
+.S9gUrf-YoZ4jf * {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fFW7wc-ibnC6b>.aZ2wEe>div {
+  border-color: rgb(50, 107, 200);
+}
+
+.P1ekSe-ZMv3u>div:nth-child(1) {
+  background-color: rgb(55, 120, 205) !important;
+}
+
+.P1ekSe-ZMv3u>div:nth-child(2),
+.P1ekSe-ZMv3u>div:nth-child(3) {
+  background-image: linear-gradient(to right, rgba(28, 28, 33, 0.7), rgba(28, 28, 33, 0.7)), linear-gradient(to right, rgb(55, 120, 205), rgb(55, 120, 205)) !important;
+}
+
+.haAclf {
+  display: inline-block;
+}
+
+.nsm7Bb-HzV7m-LgbsSe {
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.218s ease 0s, border-color 0.218s ease 0s;
+  user-select: none;
+  -webkit-appearance: none;
+  background-color: rgb(28, 28, 33);
+  background-image: none;
+  border: 1px solid rgb(59, 59, 59);
+  color: rgb(191, 191, 191);
+  cursor: pointer;
+  font-family: "Google Sans", arial, sans-serif;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 0.25px;
+  outline: none;
+  overflow: hidden;
+  padding: 0px 12px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+@media not all {
+  .nsm7Bb-HzV7m-LgbsSe {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(191, 191, 191);
+  }
+}
+
+.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe {
+  font-size: 14px;
+  height: 32px;
+  letter-spacing: 0.25px;
+  padding: 0px 10px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe {
+  font-size: 11px;
+  height: 20px;
+  letter-spacing: 0.3px;
+  padding: 0px 8px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe {
+  padding: 0px;
+  width: 40px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe {
+  width: 32px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe {
+  width: 20px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK {
+  border-radius: 20px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe {
+  border-radius: 16px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe {
+  border-radius: 10px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc {
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc {
+  background-color: rgb(55, 120, 205);
+}
+
+.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc {
+  background-color: rgb(33, 33, 33);
+  color: rgb(235, 235, 235);
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  height: 18px;
+  margin-right: 8px;
+  min-width: 18px;
+  width: 18px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  height: 14px;
+  min-width: 14px;
+  width: 14px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  height: 10px;
+  min-width: 10px;
+  width: 10px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  margin-left: 8px;
+  margin-right: -4px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  margin: 0px;
+  padding: 10px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  padding: 8px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  padding: 4px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 28, 33);
+  height: 36px;
+  margin-left: -10px;
+  margin-right: 12px;
+  min-width: 36px;
+  width: 36px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  height: 28px;
+  margin-left: -8px;
+  margin-right: 10px;
+  min-width: 28px;
+  width: 28px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  height: 16px;
+  margin-left: -6px;
+  margin-right: 8px;
+  min-width: 16px;
+  width: 16px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-radius: 18px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-radius: 14px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-radius: 8px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX {
+  justify-content: center;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+  flex-grow: 1;
+  font-family: "Google Sans", arial, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+  font-weight: 300;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+  flex-grow: 0;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+  transition: background-color 0.218s ease 0s;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe:hover,
+.nsm7Bb-HzV7m-LgbsSe:focus {
+  box-shadow: none;
+  border-color: rgb(19, 43, 78);
+  outline: none;
+}
+
+.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,
+.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+  background: rgba(50, 107, 200, 0.04);
+}
+
+.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+  background: rgba(50, 107, 200, 0.1);
+}
+
+.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,
+.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+  background: rgba(28, 28, 33, 0.24);
+}
+
+.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe {
+  background: rgba(28, 28, 33, 0.32);
+}
+
+.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY {
+  border-radius: 50%;
+  display: flex;
+  height: 20px;
+  margin-left: -4px;
+  margin-right: 8px;
+  min-width: 20px;
+  width: 20px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId {
+  font-family: Roboto;
+  font-size: 12px;
+  text-align: left;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff {
+  display: flex;
+  align-items: center;
+  color: rgb(191, 191, 191);
+  fill: rgb(191, 191, 191);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff {
+  color: rgb(235, 235, 235);
+  fill: rgb(235, 235, 235);
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c {
+  height: 18px;
+  margin: -3px -3px -3px 2px;
+  min-width: 18px;
+  width: 18px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-radius: 0px 3px 3px 0px;
+  margin-left: 12px;
+  margin-right: -10px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf {
+  border-radius: 18px;
+}
+
+.L5Fo6c-sM5MNb {
+  border: 0px;
+  display: block;
+  left: 0px;
+  position: relative;
+  top: 0px;
+}
+
+.L5Fo6c-bF1uUb {
+  border-radius: 4px;
+  bottom: 0px;
+  cursor: pointer;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.L5Fo6c-bF1uUb:focus {
+  border: none;
+  outline: none;
+}
+
+sentinel {}
+
+@media all {
+  #credential_picker_container {
+    border: none;
+    height: 330px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 391px;
+    z-index: 9999;
+  }
+}
+
+@media all {
+  #credential_picker_container iframe {
+    border: none;
+    width: 391px;
+    height: 330px;
+  }
+}
+
+@media all {
+  #g_a11y_announcement {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+  }
+}
+
+@media all {
+  .L5Fo6c-sM5MNb {
+    border: 0px;
+    display: block;
+    left: 0px;
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media all {
+  .L5Fo6c-bF1uUb {
+    border-radius: 4px;
+    bottom: 0px;
+    cursor: pointer;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@media all {
+  .L5Fo6c-bF1uUb:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+@media all {
+  sentinel {}
+}

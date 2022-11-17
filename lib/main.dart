@@ -9,6 +9,7 @@ import 'package:free_medium/webview_screen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uni_links/uni_links.dart';
 
 void main() async {
@@ -23,21 +24,30 @@ void main() async {
     appDocDir.deleteSync(recursive: true);
   }
 
-  runApp(const MyApp());
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+
+  if (prefs.getString("lastLinkLoaded") != null) {
+    runApp(MyApp(lastLinkLoaded: prefs.getString("lastLinkLoaded")!));
+  } else {
+    runApp(const MyApp());
+  }
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final String lastLinkLoaded;
+
+  const MyApp({Key? key, this.lastLinkLoaded = "https://www.medium.com"})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (_) => AppState(link: "https://www.medium.com"),
+      create: (_) => AppState(link: lastLinkLoaded),
       builder: (_, __) => MaterialApp(
         title: 'Free Medium',
         themeMode: ThemeMode.dark,
         darkTheme: ThemeData.dark(),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: const MyHomePage(title: 'Free Medium'),
       ),
     );
   }

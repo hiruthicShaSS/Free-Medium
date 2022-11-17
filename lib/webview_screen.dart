@@ -3,9 +3,11 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:free_medium/appstate.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:html/dom.dart' as dom;
 
@@ -38,6 +40,10 @@ class _WebviewScreenState extends State<WebviewScreen> {
           title: Text(title),
           actions: [
             IconButton(
+              onPressed: toggleDarkMode,
+              icon: const Icon(Icons.dark_mode),
+            ),
+            IconButton(
               onPressed: () async => _webViewController!.reload(),
               icon: const Icon(Icons.refresh),
             ),
@@ -45,6 +51,8 @@ class _WebviewScreenState extends State<WebviewScreen> {
         ),
         body: WillPopScope(
           onWillPop: () async {
+            SharedPreferences prefs = await SharedPreferences.getInstance();
+            prefs.remove("lastLinkLoaded");
             await _webViewController!.goBack();
             await _webViewController!.runJavascriptReturningResult(
                 "localStorage.clear();sessionStorage.clear();");
@@ -93,6 +101,11 @@ class _WebviewScreenState extends State<WebviewScreen> {
                         .map((e) => e.text)
                         .toList();
 
+                    SharedPreferences prefs =
+                        await SharedPreferences.getInstance();
+                    prefs.setString("lastLinkLoaded",
+                        (await _webViewController!.currentUrl())!);
+
                     setState(() =>
                         title = titles.isNotEmpty ? titles.first : "No title");
                   },
@@ -111,5 +124,49 @@ class _WebviewScreenState extends State<WebviewScreen> {
 
     await Directory(tempDir).delete(recursive: true);
     await Directory(appDir).delete(recursive: true);
+  }
+
+  Future<void> toggleDarkMode() async {
+    await _webViewController!
+        .runJavascript("""var body=document.getElementsByTagName("BODY")[0];
+                          var html=document.getElementsByTagName("HTML")[0];
+                          html.style.backgroundColor="#303000";
+                          body.style.backgroundColor="black";
+                          body.style.color="#fff";
+                          var tags=["FOOTER","HEADER","MAIN","SECTION",
+                            "NAV","FORM",
+                            "FONT","EM","B","I","U",
+                            "INPUT","P","BUTTON","OL","UL","A","DIV",
+                            "TD","TH","SPAN","LI",
+                            "H1","H2","H3","H4","H5","H6",
+                            "DD","DT",
+                            "INCLUDE-FRAGMENT","ARTICLE"
+                          ];
+                          for(let tag of tags){
+                            for(let item of document.getElementsByTagName(tag)){
+                            item.style.backgroundColor="black";
+                            item.style.color="#fff";
+                            }
+                          }
+                          for(let tag of["CODE","PRE"]){
+                            for(let item of document.getElementsByTagName(tag)){
+                            item.style.backgroundColor="black";
+                            item.style.color="green";
+                            }
+                          }
+                          for(let tag of document.getElementsByTagName("INPUT")){
+                            tag.style.border="solid 1px #bbb";
+                          }
+                          var videos=document.getElementsByTagName("VIDEO");
+                          for(let video of videos){
+                            video.style.backgroundColor="black";
+                          }
+                          for(let tag of document.getElementsByTagName("TH")){
+                            tag.style.borderBottom="solid 1px yellow";
+                          }
+                          for(let tag of document.getElementsByTagName("A")){
+                            tag.style.color="cyan";
+                          }
+ """);
   }
 }
