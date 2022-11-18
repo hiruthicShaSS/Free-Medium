@@ -1,9 +1,7 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:free_medium/appstate.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
@@ -44,7 +42,11 @@ class _WebviewScreenState extends State<WebviewScreen> {
               icon: const Icon(Icons.dark_mode),
             ),
             IconButton(
-              onPressed: () async => _webViewController!.reload(),
+              onPressed: () async {
+                await clearCache();
+
+                await _webViewController!.reload();
+              },
               icon: const Icon(Icons.refresh),
             ),
           ],
@@ -54,11 +56,6 @@ class _WebviewScreenState extends State<WebviewScreen> {
             SharedPreferences prefs = await SharedPreferences.getInstance();
             prefs.remove("lastLinkLoaded");
             await _webViewController!.goBack();
-            await _webViewController!.runJavascriptReturningResult(
-                "localStorage.clear();sessionStorage.clear();");
-            await _webViewController!.runJavascriptReturningResult(
-                r'document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });');
-            await _webViewController!.clearCacheWithoutReload();
             await clearCache();
 
             return _webViewController!.canGoBack();
@@ -122,8 +119,33 @@ class _WebviewScreenState extends State<WebviewScreen> {
     String tempDir = (await getTemporaryDirectory()).path;
     String appDir = (await getApplicationDocumentsDirectory()).path;
 
-    await Directory(tempDir).delete(recursive: true);
-    await Directory(appDir).delete(recursive: true);
+    try {
+      await Directory(tempDir).delete(recursive: true);
+      await Directory(appDir).delete(recursive: true);
+    } catch (_) {}
+
+    await _webViewController!.clearCacheWithoutReload();
+    await _webViewController!.runJavascriptReturningResult("""
+      (function () {
+        var cookies = document.cookie.split("; ");
+        for (var c = 0; c < cookies.length; c++) {
+            var d = window.location.hostname.split(".");
+            while (d.length > 0) {
+                var cookieBase = encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=' + d.join('.') + ' ;path=';
+                var p = location.pathname.split('/');
+                document.cookie = cookieBase + '/';
+                while (p.length > 0) {
+                    document.cookie = cookieBase + p.join('/');
+                    p.pop();
+                };
+                d.shift();
+            }
+        }
+    })();
+  """);
+
+    CookieManager c = CookieManager();
+    await c.clearCookies();
   }
 
   Future<void> toggleDarkMode() async {

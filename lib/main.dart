@@ -11,6 +11,7 @@ import 'package:provider/provider.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uni_links/uni_links.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,8 @@ void main() async {
   if (appDocDir.existsSync()) {
     appDocDir.deleteSync(recursive: true);
   }
+  CookieManager c = CookieManager();
+  await c.clearCookies();
 
   SharedPreferences prefs = await SharedPreferences.getInstance();
 
